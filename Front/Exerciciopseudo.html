@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartões de Livros</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            transition: scale 0.5s ease;
+        }
+
+        .card {
+            position: relative;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .card:hover {
+            border-color: #007bff;
+          
+        }
+
+        .card:hover::before {
+            content: "";
+            width: 100%;
+            height: calc(100% + 16px);
+            position: absolute;
+            bottom: -6px;
+            left: 0;
+            right: 0;
+            top: 0;
+            background-color: #dedede;
+            z-index: -1;
+        }
+
+               .card:nth-last-child(1) {
+            border: 2px dashed rgb(67, 67, 221);
+        }
+
+        .promo {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: #d9534f;
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .title {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 0 0 10px;
+        }
+
+        .author {
+            font-size: 14px;
+            color: #555;
+            margin: 0 0 10px;
+        }
+
+        .description {
+            font-size: 14px;
+            color: #777;
+            margin: 0 0 20px;
+        }
+
+        .divider {
+            position: relative;
+            height: 2px;
+            background-color: #ff4400;
+        }
+
+        .divider::before {
+            content: " ";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 50%;
+            height: 100%;
+            background-color: #3252eeec;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            font-size: 14px;
+            text-align: center;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <div class="card">
+            <div class="promo">PROMOÇÃO!</div>
+            <h3 class="title">📖Título do Livro</h3>
+            <p class="author">Autor: Nome do Autor</p>
+            <p class="description">Uma breve descrição do livro.</p>
+            <div class="divider"></div>
+            <a href="#" class="button">Ver mais</a>
+        </div>
+
+        <div class="card">
+            <div class="promo">PROMOÇÃO!</div>
+            <h3 class="title">📖Título do Livro</h3>
+            <p class="author">Autor: Nome do Autor</p>
+            <p class="description">Uma breve descrição do livro.</p>
+            <div class="divider"></div>
+            <a href="#" class="button">Ver mais</a>
+        </div>
+
+        <div class="card">
+            <div class="promo">PROMOÇÃO!</div>
+            <h3 class="title">📖Título do Livro</h3>
+            <p class="author">Autor: Nome do Autor</p>
+            <p class="description">Uma breve descrição do livro.</p>
+            <div class="divider"></div>
+            <a href="#" class="button">Ver mais</a>
+        </div>
+
+        <div class="card">
+            <div class="promo">PROMOÇÃO!</div>
+            <h3 class="title">📖Título do Livro</h3>
+            <p class="author">Autor: Nome do Autor</p>
+            <p class="description">Uma breve descrição do livro.</p>
+            <div class="divider"></div>
+            <a href="#" class="button">Ver mais</a>
+        </div>
+
+        <div class="card">
+            <div class="promo">PROMOÇÃO!</div>
+            <h3 class="title">📖Título do Livro</h3>
+            <p class="author">Autor: Nome do Autor</p>
+            <p class="description">Uma breve descrição do livro.</p>
+            <div class="divider"></div>
+            <a href="#" class="button">Ver mais</a>
+        </div>
+
+        <div class="card">
+            <div class="promo">PROMOÇÃO!</div>
+            <h3 class="title">📖Título do Livro</h3>
+            <p class="author">Autor: Nome do Autor</p>
+            <p class="description">Uma breve descrição do livro.</p>
+            <div class="divider"></div>
+            <a href="#" class="button">Ver mais</a>
+
+        </div>
+    </div>
+</body>
+</html>

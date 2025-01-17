@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+       
+        
+        nav {
+            display: flex;
+            justify-content: flex-start;
+            gap: 1.5rem;
+            padding: 0.5rem;
+            background-color: #444;
+            
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+           
+        }
+        .nav-icon{
+
+          display: none;
+            cursor: pointer; 
+            font-size: 1.5rem;
+        }
+      
+
+        main {
+            padding: 1rem;
+        }
+
+        section {
+            margin-bottom: 2rem;
+        }
+
+        h2 {
+            text-align: left;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+        }
+
+        .projects div {
+            background-color: #f4f4f4;
+            padding: 1rem;
+            text-align: center;
+            border: 1px solid #ccc;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        
+        @media (max-width: 768px) {
+            .projects {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .header-text {
+                display: none;
+            }
+
+            .header-icon {
+                display: block;
+            }
+            .fate{
+              display:none;
+          
+            }
+        }
+
+        @media (max-width: 480px) {
+            .projects {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+  <header>
+    <h1>Meu Portfólio</h1>
+    
+  </header>
+  <nav>
+    <div class="header-icon">☰</div>
+    <div class="fate">
+    <a href="#sobre">Sobre</a>
+    <a href="#projetos">Projetos</a>
+    <a href="#contato">Contato</a>
+  </div>
+  </nav>
+  <main>
+    <section id="sobre">
+      <h2>Sobre Mim</h2>
+      <p>Sou desenvolvedor front-end apaixonado por criar interfaces incríveis e responsivas.</p>
+    </section>
+    <section id="projetos">
+      <h2>Meus Projetos</h2>
+      <div class="projects">
+        <div>Projeto 1</div>
+        <div>Projeto 2</div>
+        <div>Projeto 3</div>
+        <div>Projeto 4</div>
+        <div>Projeto 5</div>
+        <div>Projeto 6</div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>Contato: <a href="mailto:email@exemplo.com" style="color: #00f;">email@exemplo.com</a></p>
+  </footer>
+</body>
+</html>
