@@ -1,0 +1,5 @@
+git status - Verifica quais arquivos estão ou não no git
+git add .  - Adicionar Arquivos ( Com . adiciona tudo, sem ponto coloca o nome do arquivo que vai subir)
+git commit -m "comentário" - Para registrar alterações feitas em um ou mais arquivos de um projeto no Git
+git push origin main - Enviar as alterações locais para o repositório remoto
+
